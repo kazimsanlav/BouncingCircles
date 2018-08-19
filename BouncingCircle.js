@@ -12,11 +12,13 @@ function setup() {
     p1 = createP('Number of balls: ' + Circles.length);
     // button1
     b1 = createButton('Reset');
+    b1.style('background-color', 'red');
     createP('');
     // b1.position(150, windowHeight - 40);
     b1.mouseClicked(resetCanvas);
     // button2
     b2 = createButton('Rainbow on/off');
+    b2.style('background-color', 'red');
     // b2.position(150, windowHeight - 40);
     b2.mouseClicked(rainbow);
     //paragraph2 and sileder1
@@ -37,8 +39,15 @@ function resetCanvas() {
 }
 
 function rainbow() {
+    
     colorchange = !colorchange;
     // print(colorchange);
+    if(colorchange){
+        b2.style('background-color', 'green');
+    }
+    else{
+        b2.style('background-color', 'red');
+    }
 }
 
 function draw() {
