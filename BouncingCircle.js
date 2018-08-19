@@ -1,14 +1,21 @@
 let Circles = [];
 let MAXCIRCLES = 25;
-var cnv, p1;
+let cnv, p1, b1;
 
 function setup() {
     cnv = createCanvas(windowWidth, windowHeight - 150);
     background(0);
+    cnv.mousePressed(addCircle);
     p1 = createP('Number of balls: ' + Circles.length);
+    b1 = createButton('Reset');
+    b1.position(150, windowHeight-40);
+    b1.mousePressed(resetCanvas);
 }
 
-
+function resetCanvas() {
+    Circles = [];
+    background(0);
+}
 function draw() {
 
     background(0);
@@ -57,7 +64,7 @@ function draw() {
     }
 }
 
-function mouseClicked() {
+function addCircle() {
     Circles.push(new Circle(mouseX, mouseY, 30, random([1,-1])*random(1,3), 
     random([1,-1])*random(1,3)));
 }
