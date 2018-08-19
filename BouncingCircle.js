@@ -15,14 +15,14 @@ function setup() {
     b1.mouseClicked(resetCanvas);
     //paragraph2 and sileder1
     p2 = createP('Radius:');
-    p2.position(310, windowHeight - 55);
+    // p2.position(310, windowHeight - 55);
     s1 = createSlider(20, 60, 40, 5);
-    s1.position(370, windowHeight - 40);
+    // s1.position(370, windowHeight - 40);
     //paragraph3 and sileder2
     p3 = createP('Speed:');
-    p3.position(610, windowHeight - 55);
+    // p3.position(610, windowHeight - 55);
     s2 = createSlider(1, 10, 5, 1);
-    s2.position(670, windowHeight - 40);
+    // s2.position(670, windowHeight - 40);
 }
 
 function resetCanvas() {
