@@ -57,9 +57,9 @@ function draw() {
     }
 }
 
-function mouseReleased() {
-    Circles.push(new Circle(mouseX, mouseY, 50, random([1,-1])*random(2), 
-    random([1,-1])*random(2)));
+function mouseClicked() {
+    Circles.push(new Circle(mouseX, mouseY, 50, random([1,-1])*random(1,3), 
+    random([1,-1])*random(1,3)));
 }
 
 class Circle {
