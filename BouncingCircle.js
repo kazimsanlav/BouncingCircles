@@ -5,7 +5,7 @@ let colorchange = false;
 
 function setup() {
     //canvas
-    cnv = createCanvas(windowWidth, windowHeight - 150);
+    cnv = createCanvas(windowWidth-35, windowHeight - 150);
     background(0);
     cnv.mouseClicked(addCircle);
     //paragraph1
