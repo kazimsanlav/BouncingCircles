@@ -5,11 +5,11 @@ let cnv, p1, b1;
 function setup() {
     cnv = createCanvas(windowWidth, windowHeight - 150);
     background(0);
-    cnv.mousePressed(addCircle);
+    cnv.mouseClicked(addCircle);
     p1 = createP('Number of balls: ' + Circles.length);
     b1 = createButton('Reset');
     b1.position(150, windowHeight-40);
-    b1.mousePressed(resetCanvas);
+    b1.mouseClicked(resetCanvas);
 }
 
 function resetCanvas() {
