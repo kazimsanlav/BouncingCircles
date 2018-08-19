@@ -43,7 +43,7 @@ function rainbow() {
 
 function draw() {
 
-    background(0,25);
+    background(0);
 
     p1.html('Number of balls: ' + Circles.length);
     // update show every circle
