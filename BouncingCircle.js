@@ -2,8 +2,10 @@ let Circles = [];
 let MAXCIRCLES = 25;
 let cnv, p1, p2, p3, b1, b2, s1, s2;
 let colorchange = false;
+let author;
 
 function setup() {
+
     //canvas
     cnv = createCanvas(windowWidth-35, windowHeight - 150);
     background(0);
@@ -31,6 +33,12 @@ function setup() {
     // p3.position(610, windowHeight - 55);
     s2 = createSlider(1, 10, 5, 1);
     // s2.position(670, windowHeight - 40);
+
+    //Changing the element's style which is created from html from js
+    author = select('#author');
+    author.style('font-size','20pt');
+    author.style('font-family','Roboto');
+    author.style('color','rgb(98, 21, 223)');
 }
 
 function resetCanvas() {
